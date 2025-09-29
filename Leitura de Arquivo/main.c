@@ -30,7 +30,7 @@ int main() {
     float salario;
 
     printf("Dados dos funcionários:\n");
-    while (fscanf(arquivo, "%s %d %f", nome, &idade, &salario) == 4) {
+    while (fscanf(arquivo, "%s %d %f", nome, &idade, &salario) == 3) {
         printf("Nome: %s, Idade: %d, Salário: %.2f\n", nome, idade, salario);
     }
 
