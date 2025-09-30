@@ -1,33 +1,84 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+/* Programa para ler a quantidade de pratos vendidos por dia da semana
+   e calcular a média semanal. */
 
 int main(int argc, char *argv[]) {
 	
-	int pratos[7], i, sum = 0;
 	
+	
+	printf("¦¦¦¦¦¦  ¦¦¦¦¦¦¦ ¦¦¦¦¦¦¦ ¦¦¦¦¦¦¦¦  ¦¦¦¦¦   ¦¦¦¦¦¦  ¦¦¦¦¦¦  ¦¦    ¦¦ ¦¦¦    ¦¦ ¦¦¦¦¦¦¦¦ \n");
+    printf("¦¦   ¦¦ ¦¦      ¦¦         ¦¦    ¦¦   ¦¦ ¦¦      ¦¦    ¦¦ ¦¦    ¦¦ ¦¦¦¦   ¦¦    ¦¦    \n");
+    printf("¦¦¦¦¦¦  ¦¦¦¦¦   ¦¦¦¦¦¦¦    ¦¦    ¦¦¦¦¦¦¦ ¦¦      ¦¦    ¦¦ ¦¦    ¦¦ ¦¦ ¦¦  ¦¦    ¦¦    \n");
+    printf("¦¦   ¦¦ ¦¦           ¦¦    ¦¦    ¦¦   ¦¦ ¦¦      ¦¦    ¦¦ ¦¦    ¦¦ ¦¦  ¦¦ ¦¦    ¦¦    \n");
+    printf("¦¦   ¦¦ ¦¦¦¦¦¦¦ ¦¦¦¦¦¦¦    ¦¦    ¦¦   ¦¦  ¦¦¦¦¦¦  ¦¦¦¦¦¦   ¦¦¦¦¦¦  ¦¦   ¦¦¦¦    ¦¦    \n");
+    printf("                                                                                      \n");
+    printf(" 																					  \n");
+	
+	
+	
+	int pratos[7], i, sum = 0; // vetor para guardar pratos por dia e soma total
+	
+	// vetor de strings com os dias da semana
 	const char *dias[7] ={
 	"Domingo", "Segunda", "Terca", "Quarta",
     "Quinta", "Sexta", "Sabado"
 	};
 	
-	float media = 0;
+	float media = 0; // variável para guardar a média
 	
-	
+	// entrada de dados: lê pratos vendidos em cada dia
 	for (i = 0; i < 7; i++){
 		printf("Digite quantos pratos vendeu %s : ", dias[i]);
 		scanf("%d", &pratos[i]);
 		
-		sum += pratos[i];
+		sum += pratos[i]; // acumula para calcular a média
 	}
 	
+	// cálculo da média
 	media = sum / 7;
 	
-	printf("A media de pratos vendidos na semana e de : %.2f", media);
+	// saída organizada em forma de tabela
+	printf("\n");
+	printf("===============================================================\n");
 	
+	// imprime os nomes dos dias
+	for (i = 0; i < 7; i++){
+		printf("%s\t", dias[i]);
+	}
+	printf("  Media\n"); // coluna da média
 	
+	// imprime os valores de pratos vendidos
+	for (i = 0; i < 7; i++){
+		printf("%d\t", pratos[i]);
+	}
 	
+	// imprime a média final no final da tabela
+	printf("%.2f\n", media);
 	
-	return 0;
+	printf("===============================================================");
+	
+	return 0; // fim do programa
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                      
+                                                                                      
+
