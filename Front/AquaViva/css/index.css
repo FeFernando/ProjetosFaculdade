@@ -12,7 +12,7 @@ body {
       padding: 20px;
       text-align: center;
     }
-    /* Layout desktop */
+    
     .navbar {
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@ body {
     font-weight: bold;
     }
 
-    /* Esconde o botão sanduíche no desktop */
+  
     .menu-toggle {
     display: none;
     font-size: 24px;
@@ -44,14 +44,14 @@ body {
     cursor: pointer;
     }
 
-    /* Mobile */
+   
     @media (max-width: 768px) {
     .menu-toggle {
-        display: block; /* aparece o botão */
+        display: block; 
     }
 
     .nav-links {
-        display: none; /* esconde links */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -62,7 +62,7 @@ body {
     }
 
     .nav-links.active {
-        display: flex; /* mostra quando clicado */
+        display: flex; 
     }
     }
 
@@ -88,7 +88,7 @@ body {
       font-weight: bold;
     }
     .btn:hover {
-      background: #023e8a;
+      background: #00695c
     }
     footer {
       background: #00695c;
@@ -97,20 +97,7 @@ body {
       padding: 20px;
     }
 
-    .galeria {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 10px;
-  padding: 20px;
-}
-
-.galeria img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-  cursor: pointer;
-}
+  
 
 .video {
   display: flex;

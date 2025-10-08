@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doações</title>
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/doacao.css">
 </head>
 <body>
       <header>
@@ -35,38 +36,65 @@
 
 
 
-   <section class="hero">
-    <video width="640" height="360" controls autoplay muted loop>
-          <source src="videos/" type="">
-        </video>
-    <h2>Sua doação transforma vidas</h2>
-  </section>
-
-  <section class="section">
-    <h3>Por que doar?</h3>
-    <p>
-      Cada contribuição ajuda a levar alimentos, educação e esperança para centenas de famílias.
-      Com a sua ajuda, podemos continuar transformando realidades.
-    </p>
-  </section>
-
-  <section class="section doacao-form">
-    <h3>Escolha um valor para doar</h3>
-    <div class="valores">
-      <button>R$ 20</button>
-      <button>R$ 50</button>
-      <button>R$ 100</button>
-      <button>Outro Valor</button>
+   <section class="banner">
+    <div class="overlay">
+      <h2>Faça a Diferença com sua Doação 💧</h2>
+      <p>Cada gota importa. Ajude a levar água potável para comunidades na África.</p>
     </div>
-    <a href="#" class="cta">Doar Agora</a>
   </section>
 
-  <section class="section">
-    <h3>Transparência</h3>
-    <p>
-      90% das nossas doações são destinadas diretamente aos projetos sociais. 
-      Veja nossos <a href="#">relatórios anuais</a> e saiba como utilizamos cada centavo.
-    </p>
-  </section>
+  <main>
+    <section class="formulario">
+      <h2>Formulário de Doação</h2>
+      <form action="#" method="post">
+        <div class="campo">
+          <label for="nome">Nome Completo:</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+        </div>
+
+        <div class="campo">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="valor">Valor da Doação (R$):</label>
+          <input type="number" id="valor" name="valor" placeholder="Ex: 50,00" required min="1">
+        </div>
+
+        <div class="campo">
+          <label for="frequencia">Frequência:</label>
+          <select id="frequencia" name="frequencia" required>
+            <option value="">Selecione...</option>
+            <option value="unica">Doação Única</option>
+            <option value="mensal">Mensal</option>
+            <option value="anual">Anual</option>
+          </select>
+        </div>
+
+        <div class="campo">
+          <label>Método de Pagamento:</label>
+          <div class="pagamento">
+            <label><input type="radio" name="pagamento" value="cartao" required> Cartão de Crédito</label>
+            <label><input type="radio" name="pagamento" value="pix"> PIX</label>
+            <label><input type="radio" name="pagamento" value="boleto"> Boleto Bancário</label>
+          </div>
+        </div>
+
+        <div class="campo">
+          <label for="mensagem">Mensagem (opcional):</label>
+          <textarea id="mensagem" name="mensagem" placeholder="Deixe uma mensagem ou dedicatória..."></textarea>
+        </div>
+
+        <button type="submit">Confirmar Doação</button>
+        <p class="agradecimento">💙 Sua contribuição ajuda a transformar vidas!</p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AquaViva – Água para Todos. Todos os direitos reservados.</p>
+  </footer>
+<script src="js/index.js"></script>
 </body>
 </html>
