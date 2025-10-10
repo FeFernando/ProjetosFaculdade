@@ -8,7 +8,7 @@
     }
 h2 {
       text-align: center;
-      color: #0077b6;
+      color: #00695c;
       margin-bottom: 20px;
     }
 
@@ -32,7 +32,7 @@ h2 {
     }
 
     input:focus, select:focus, textarea:focus {
-      border-color: #0096c7;
+      border-color: #00695c;
       box-shadow: 0 0 5px rgba(0, 150, 199, 0.3);
       outline: none;
     }
@@ -43,7 +43,7 @@ h2 {
     }
 
     button {
-      background-color: #0077b6;
+      background-color: #00695c;
       color: white;
       border: none;
       padding: 12px;
@@ -55,7 +55,7 @@ h2 {
     }
 
     button:hover {
-      background-color: #023e8a;
+      background-color: #00695c;
     }
 
     .info {

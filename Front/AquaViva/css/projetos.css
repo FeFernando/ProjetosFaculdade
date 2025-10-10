@@ -1,9 +1,26 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* permite quebrar linha */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 20px; /* espaçamento entre imagens */
+  padding: 20px;
+}
 
 
 .galeria img {
-    width: 19%;
+    width: 40%;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
     cursor: pointer;
 }
+
+@media (max-width: 768px) {
+      .galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    cursor: pointer;
+}
+    }
