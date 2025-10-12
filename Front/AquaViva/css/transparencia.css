@@ -2,13 +2,13 @@ form {
   border: 4px solid #f1f1f1;
 }
 
-/* Add some padding and a grey background color to containers */
+
 .container {
   padding: 20px;
   background-color: #f1f1f1;
 }
 
-/* Style the input elements and the submit button */
+
 input[type=text], input[type=submit] {
   width: 100%;
   padding: 12px;
@@ -18,12 +18,11 @@ input[type=text], input[type=submit] {
   box-sizing: border-box;
 }
 
-/* Add margins to the checkbox */
+
 input[type=checkbox] {
   margin-top: 16px;
 }
 
-/* Style the submit button */
 input[type=submit] {
   background-color: #04AA6D;
   color: white;
@@ -32,4 +31,30 @@ input[type=submit] {
 
 input[type=submit]:hover {
   opacity: 0.8;
+}
+
+.ibagens {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;         
+  justify-content: center;         
+  max-width: 100%;
+  overflow: hidden;       
+}
+
+.ibagens img {
+  max-width: 45%;        
+  height: auto;           
+  flex: 1 1 300px;         
+  object-fit: cover;  
+}
+
+@media (max-width: 600px) {
+  .ibagens img {
+  max-width: 100%;        
+  height: auto;           
+    
+}
+
+ 
 }
