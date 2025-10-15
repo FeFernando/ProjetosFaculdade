@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px; 
+    max-width: 600px; 
+    margin: 0 auto; 
+}
+.card {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    font-size: var(--font-size-lg);
+    font-family: sans-serif;
+}
+
+.fonts{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--color-primary-200);
+}
+.font{
+    place-self: center;
+}
+.spaces{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-neutral-500);
+    color: aliceblue;
+    justify-content: center;
+    align-items: center;
+}
+
+.space{
+    display: flex;
+    width: 100px;
+    height: 50px;
+    background-color: var(--color-secondary-400);
+    justify-content: center;
+    align-items: center;
+}
+.card:nth-child(1) {background: var(--color-primary-200); }
+.card:nth-child(2) {background: var(--color-primary-300);}
+.card:nth-child(3) {background: var(--color-primary-400);}
+.card:nth-child(4) {background: var(--color-primary-500);}
+.card:nth-child(5) {background: var(--color-secondary-200);}
+.card:nth-child(6) {background: var(--color-secondary-300);}
+.card:nth-child(7) {background: var(--color-secondary-400);}
+.card:nth-child(8) {background: var(--color-secondary-500);}
+.card:nth-child(9) {background: var(--color-neutral-200);}
+.card:nth-child(10) {background: var(--color-neutral-300);}
+.card:nth-child(11) {background: var(--color-neutral-400);}
+.card:nth-child(12) {background: var(--color-neutral-500);}
+
+.font:nth-child(1) {font-size: var(--font-size-xs);}
+.font:nth-child(2) {font-size: var(--font-size-sm);}
+.font:nth-child(3) {font-size: var(--font-size-md);}
+.font:nth-child(4) {font-size: var(--font-size-lg);}
+.font:nth-child(5) {font-size: var(--font-size-xl);}
+
+.space:nth-child(2) {margin-left: var(--space-1);}
+.space:nth-child(3) {margin-left: var(--space-2);}
+.space:nth-child(4) {margin-left: var(--space-3);}
+.space:nth-child(5) {margin-left: var(--space-4);}
+.space:nth-child(6) {margin-left: var(--space-5);}
+.space:nth-child(7) {margin-left: var(--space-6);}

@@ -1,0 +1,5 @@
+.section {
+  padding: var(--space-4);
+  margin-bottom: var(--space-5);
+  background: var(--color-neutral-200);
+}

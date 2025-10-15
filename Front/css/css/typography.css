@@ -1,0 +1,13 @@
+h1 {
+  font-size: var(--font-size-xl);
+  color: var(--color-neutral-500);
+}
+
+h2 {
+  font-size: var(--font-size-lg);
+}
+
+p {
+  font-size: var(--font-size-md);
+  color: var(--color-neutral-400);
+}
