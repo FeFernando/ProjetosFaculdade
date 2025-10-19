@@ -363,3 +363,43 @@ nav {
     justify-content: center;
   }
 }
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.buttons-container button {
+  margin: 10px;
+}
+
+.buton button{
+  background-color: #0056b3;
+}
+
+.buton button:hover{
+  background-color: #007bff;
+}
+
+.buton1 button{
+  background-color: #0056b3;
+}
+.buton1 button:active{
+  background-color: #0a89c0;
+  color: white;
+}
+
+.buton2 button{
+  background-color: #007bff;
+}
+
+.buton2 button:focus{
+  background-color: #00b894;
+  color: #222831;
+}
+
+.buton3 button{
+  background-color: #007bff;
+}
+
+.buton3 button:disabled{
+  background-color: #757b81;
+}
